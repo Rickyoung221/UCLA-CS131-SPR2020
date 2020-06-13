@@ -1,0 +1,60 @@
+I used atom to do this assignment. However I didn't know that atom could not
+auto save, and there is couple times that the program exits without any reminder
+. So it wasted me many time on it. Would never use atom again.
+
+Function 1:
+To check if list a is a subset of list b, I used pattern matching, if the list
+
+a is empty,
+then it must be subset of list b. Hence, in this case, it returns true. The
+second case is if a list is not empty. In this case, I used men function from
+ List module. It could
+return true iff an element is equal to an element of list b. And then I used hd
+and tl to be applied in recursion function to scan every single elements. Once
+the function find any element does not exist in list b, the function return
+false which means list a is not subset of list b.
+
+Function 2:
+It is more like a math problem. List a equal to list b iff list a is a subset
+ of list b and list b is also a subset of list a as well. So the function
+ returns true iff these both statements is true. Hence I used && operator and
+ ubset function to create equal_sets function.
+
+Function 3:
+For this problem, I used List.merge cmp to combine two list. Since the "the
+lists that represent sets can contain duplicates", this would be the fastest
+way. And I also find List.append can solve this problem. The difference is that
+ merge would sort the list and append does not.
+
+
+Function 4:
+For intersection function, if a is empty, then the intersecion would be empty
+as well. If it is not empty, then use List.find_all (or called List.filter) and
+List.mem to return the list that the elements exists in list b but also exists
+in list a.
+
+Function 5:
+For this function, I used not operator and put into the last function I used.
+ So it could return the elements inside a but does not exist in b.
+
+Function 6;
+This function needs to be recursive, it compares the output result to the input,
+ it returns if they are same. If not, the result would be as the input to call
+ the function again.
+
+Function 7:
+I spent a couple of days of this last part since I do not really understand the
+ question. Fortunately, I got some ideas from TA's discussion. Thanks for that.
+I used the hint from the assignment, used the equal_set and
+computer_fixed_point function. At the beginning, I made a tree map to help me
+separate the function to a couple of smaller helper functions.
+It scan and check the first element in the list, I used a recursion helper
+function to access the symbol list, it scan and extract a list of symbols and
+list of rules. And according to keep_nonterminal function, it check if the rules
+has nonterminal values in the left hand side and if it is in the reachable
+symbol list. If it returns true, then the function will store this symbol in
+the right_hand_sidw. By these helper function, finally the
+function get the all reachable function without changing the order.
+
+8：
+For the part of test case, I followed the sample and made some similar cases.
