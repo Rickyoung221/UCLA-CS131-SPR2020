@@ -1,0 +1,27 @@
+Function 1: 
+make a helper function to convert the rhs of the grammar into production function.
+
+Function 2: 
+I used a helper function to identify the node and leaf, remove the node and append
+the leaf in the list one by one.
+
+Function 3:
+I used two mutually recursive functions. One is to pick up the head rule 
+every time and then pass it to the another function to retrieve every element.
+
+Function 4: 
+I didn't directly use make_matcher function in make_parser but the code of these two functions are almost the same. 
+At the beginning, I am thinking how to construct the make_parser function in terms of  the make_matcher directly, but it is hard and costed me a few days since it is so abstract. 
+Afterwards, I used the logic in the python hint code provided by TA which comes from "https://github.com/CS131-TA-team/UCLA_CS131_CodeHelp/blob/master/OCaml/hw2/hw2_matcher2parser.py".
+ Although I understood the logic, but how to implement it in OCaml is a problem
+for me. Because OCaml didn't allow for loop. I spent about two days to implement it, the task of how to implement the for loop cost my most of the time. 
+
+
+The weakness of my function: 
+(a) Take my test case as example, when the parse has the logic that haven't 
+been defined before, it will run into an infinite 
+recursion. 
+(b) It didn't call the make_matcher which cause the low-efficiency.
+(c) The program is kind of redundant since my make_match and make_parse function are almost the same. 
+(d) The function is not very efficient. Take the sample case 4 as an example.  When my function pass a frag which has a long length, it will cost long time and many memory to get the result. 
+(e) Some pattern matching is not exhaustive. 
