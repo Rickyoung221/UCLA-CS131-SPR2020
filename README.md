@@ -9,3 +9,5 @@ Programming Language course in UCLA SPRING 2020 with Professor Eggert
 | Homework 4 (Prolog) | 51.1/100  | Late Penalty $2^5$ |
 | Homework 5 (Scheme) | 84/100    |                    |
 | Homework 6          | 100/100   |                    |
+
+Grade: A
