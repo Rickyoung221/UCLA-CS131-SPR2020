@@ -10,5 +10,6 @@ Programming Language course in UCLA SPRING 2020 with Professor Eggert
 | Homework 5 (Scheme) | 84/100    |             Late Penalty       |
 | Homework 6          | 100/100   |                    |
 
+ALL the deduct points are late penalty, the project itself passed all the test cases.
 I took 5 CS courses this quarter, most of the projects were deducted by the late penalty. But I got good grade in the final (top 15%)
 Grade: A
